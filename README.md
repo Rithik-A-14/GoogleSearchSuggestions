@@ -131,4 +131,4 @@ Use these files to complete the implementation:
 
 </details>
 
-PublicLink- [https://rithikgolesrch.ccbp.tech/](rithikgolesrch.ccbp.tech)
+PublicLink- [rithikgolesrch.ccbp.tech](https://rithikgolesrch.ccbp.tech/)
