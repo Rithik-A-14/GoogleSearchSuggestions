@@ -1,20 +1,25 @@
 import './index.css'
 
-function SuggestionItem(props) {
-  const {suggestions, change} = props
-  const {suggestion} = suggestions
-  function changetext() {
-    change(suggestion)
+const SuggestionItem = props => {
+  const {suggestionDetails, updateSearchInput} = props
+  const {suggestion} = suggestionDetails
+
+  const onClickSuggestion = () => {
+    updateSearchInput(suggestion)
   }
 
   return (
-    <li className="suggestion_card">
-      <p className="suggestion_text">{suggestion}</p>
-      <button type="button" onClick={changetext} className="btn">
+    <li className="suggestion-item">
+      <p className="suggestion-text">{suggestion}</p>
+      <button
+        type="button"
+        className="arrow-button"
+        onClick={onClickSuggestion}
+      >
         <img
           src="https://assets.ccbp.in/frontend/react-js/diagonal-arrow-left-up.png"
           alt="arrow"
-          className="suggestion_arrow"
+          className="arrow"
         />
       </button>
     </li>
